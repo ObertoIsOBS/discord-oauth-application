@@ -26,8 +26,6 @@ __mongoConnectionString__ Your MongoDB connection string.
 
 __guild__ The ID of the server the applications are for.
 
-__title__ The title of the application. E.g OBSLand Moderator Application
-
 __requiredRoles__ An array of role IDs applicants must have. **They must have all the roles here.**
 
 __allowedRoles__ An array of role IDs applicants must have at least one of.
@@ -36,13 +34,13 @@ __blockedRoles__ An array od role IDs that applicants cannot have.
 
 __open__ Whether or not the application is open.
 
-__formLink__ The link to your google form. Change `viewform?usp=sf_link` in the link to `viewform?embedded=true`. **Do not use a shortened link!**
-
 __rootURL__ The root url the application will be hosted on **without the port**.
 
 __port__ The port the application will be hosted on, use 80 if none.
 
 ## Setting up your form
+In [apply.html](https://github.com/ObertoIsOBS/discord-oauth-application/blob/main/apply.html) fill in the title on line 16. After, copy your form embed code and paste it on line 59!
+
 If you would like to require users to enter their discord ID the program shows this "code" above the form which is equivalent to their ID. You can add a question like this to have them enter their Discord ID.
 ![codeExample](https://cdn.obs.wtf/images/codeExp.png)
 
