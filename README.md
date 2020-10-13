@@ -24,6 +24,8 @@ __client_token__ The token of your Discord application. **Do not share this, kee
 
 __guild__ The ID of the server the applications are for.
 
+__title__ The title of the application. E.g OBSLand Moderator Application
+
 __requiredRoles__ An array of role IDs applicants must have. **They must have all the roles here.**
 
 __allowedRoles__ An array of role IDs applicants must have at least one of.
@@ -41,3 +43,6 @@ __port__ The port the application will be hosted on, use 80 if none.
 ## Setting up your form
 If you would like to require users to enter their discord ID the program shows this "code" above the form which is equivalent to their ID. You can add a question like this to have them enter their Discord ID.
 ![codeExample](https://cdn.obs.wtf/images/codeExp.png)
+
+## Publishing
+Once you are done, make sure "open" in [config.json](https://github.com/ObertoIsOBS/discord-oauth-application/blob/main/config.json) is set to `true`. To get the application link check the console when you start the program. You will see it there, this link will not change so long as the client information stays the same. I recommend using [redir.wtf](https://redir.wtf) to create a custo URL which will lead to your application.
