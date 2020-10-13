@@ -5,6 +5,7 @@ A very simple system for adding Discord authentication to your moderator applica
 - A location to host (Server or Heroku)
 - A Discord Account
 # Setup
+- Fork this repo, or install the zip file.
 - Create a new application [here](https://discord.com/developers) and add a bot to it.
 - Fill in the following fields in [config.json](https://github.com/ObertoIsOBS/discord-oauth-application/blob/main/config.json) with the information from your bot.
   - client_id
@@ -55,3 +56,6 @@ Open `update.bat` first to download the dependencies. Once finished run `run.bat
   - `npm i -g nodemon`
 - Run the program
 `nodemon index.js` *You can also use managers like pm2 of course.*
+
+## Having Issues?
+Chat with us on [our support server](https://discord.gg/uqWujj8) or submit an issue on this repo.
