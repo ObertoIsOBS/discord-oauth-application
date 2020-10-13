@@ -7,7 +7,34 @@
 
 <body>
 
-    <script data-main="back.js" src="https://cdn.obs.wtf/js/require.min.js"></script>
+    <script src="https://cdn.obs.wtf/js/require.min.js"></script>
+    <script>
+        window.onload = async () => {
+        const config = require("./config.json");
+            
+            if (!window.location.href.split("?") || !window.location.href.split("?")[1].split("&")) return window.location.href = '/api/callback';
+            
+            document.getElementById("mainTitle").innerText = config.title;
+            document.getElementById("lowerTitle").innerText = config.title;
+            
+            document.getElementById("formFrame").src = config.formLink;
+            
+            var params = new Map();
+
+            var arr = window.location.href.split("?")[1].split("&");
+
+            arr.forEach(item => {
+                params.set(item.split("=")[0], item.split("=")[1]);
+            });
+
+            var id = params.get("id");
+
+            var elem = document.getElementById("codeItem");
+
+            elem.innerText = id;
+            
+        }
+    </script>
     
     <style>
         div {
@@ -22,11 +49,12 @@
         }
     </style>
     <div>
-        <h1>Apply for Moderator in The Spoopy Muffin</h1>
+        <h1 id="lowerTitle">Apply</h1>
         <h3>Your code: <span id="codeItem" style="color: crimson;"></span></h3>
         <hr>
         <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSczp88zHHQ5TYF6RLnYWEBGMIlH3YPI5LdRpPax0sy2TMU-cg/viewform?embedded=true"
+            id="formFrame"
+            src=""
             width="640" height="1733" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 </body>
