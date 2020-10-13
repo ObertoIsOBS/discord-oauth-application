@@ -37,3 +37,7 @@ __formLink__ The link to your google form. Change `viewform?usp=sf_link` in the 
 __rootURL__ The root url the application will be hosted on **without the port**.
 
 __port__ The port the application will be hosted on, use 80 if none.
+
+## Setting up your form
+If you would like to require users to enter their discord ID the program shows this "code" above the form which is equivalent to their ID. You can add a question like this to have them enter their Discord ID.
+![codeExample](https://cdn.obs.wtf/images/codeExp.png)
