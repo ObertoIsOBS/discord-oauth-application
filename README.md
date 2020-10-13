@@ -12,3 +12,4 @@ A very simple system for adding Discord authentication to your moderator applica
   - client_token
  - Go to Oauth2 and create a bot invite link and copy it.
  ![inviteExample](https://cdn.obs.wtf/images/oauthinviteExp.png)
+ - Fill in the rest of [config.json](https://github.com/ObertoIsOBS/discord-oauth-application/config.json) with help from the information below.
