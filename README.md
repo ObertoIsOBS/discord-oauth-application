@@ -39,13 +39,13 @@ __rootURL__ The root url the application will be hosted on **without the port**.
 
 __port__ The port the application will be hosted on, use 80 if none.
 
-## Setting up your form
+# Setting up your form
 In [apply.html](https://github.com/ObertoIsOBS/discord-oauth-application/blob/main/apply.html) fill in the title on line 16. After, copy your form embed code and paste it on line 59!
 
 If you would like to require users to enter their discord ID the program shows this "code" above the form which is equivalent to their ID. You can add a question like this to have them enter their Discord ID.
 ![codeExample](https://cdn.obs.wtf/images/codeExp.png)
 
-## Publishing
+# Publishing
 Once you are done, make sure "open" in [config.json](https://github.com/ObertoIsOBS/discord-oauth-application/blob/main/config.json) is set to `true`. To get the application link check the console when you start the program. You will see it there, this link will not change so long as the client information stays the same. I recommend using [redir.wtf](https://redir.wtf) to create a custo URL which will lead to your application.
 Please read the information on starting the program.
 ### Locally
@@ -57,5 +57,5 @@ Open `update.bat` first to download the dependencies. Once finished run `run.bat
 - Run the program
 `nodemon index.js` *You can also use managers like pm2 of course.*
 
-## Having Issues?
+# Having Issues?
 Chat with us on [our support server](https://discord.gg/uqWujj8) or submit an issue on this repo.
