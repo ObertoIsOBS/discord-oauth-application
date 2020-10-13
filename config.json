@@ -4,12 +4,10 @@
 "client_token": "",
 "mongoConnectionString": "",
 "guild": "",
-"title": "",
 "requiredRoles": [],
 "allowedRoles": [],
 "blockedRoles": [],
 "open": true,
-"formLink": "",
 "rootURL": "",
 "port": 80
 }
