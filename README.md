@@ -22,6 +22,8 @@ __client_secret__ The client secret of your Discord applications.
 
 __client_token__ The token of your Discord application. **Do not share this, keep your repository private!**
 
+__mongoConnectionString__ Your MongoDB connection string.
+
 __guild__ The ID of the server the applications are for.
 
 __title__ The title of the application. E.g OBSLand Moderator Application
