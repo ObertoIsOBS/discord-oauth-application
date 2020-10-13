@@ -40,7 +40,7 @@ var applicantScheme = new mongoose.Schema({
 
 var applicant = mongoose.model("applicant", applicantScheme);
 
-apps.get('/api/callback', async function (req, res) {
+app.get('/api/callback', async function (req, res) {
 
   var Discord = require('discord.js');
   var client = new Discord.Client();
@@ -66,9 +66,9 @@ apps.get('/api/callback', async function (req, res) {
   data.append('scope', 'identify');
   data.append('code', accessCode);
 
-  var infoRes = await fetch('https://discordapp.com/api/oauth2/token', {
+  var infoRes = await fetch('https://discord.com/api/oauth2/token', {
     method: 'POST',
-    body: data,
+    body: data
   })
 
   var info = await infoRes.json();
@@ -122,7 +122,7 @@ apps.get('/api/callback', async function (req, res) {
   return;
 });
 
-apps.get('/api/application', async function (req, res) {
+app.get('/api/application', async function (req, res) {
 
   var token = req.query.access_token;
   var token_type = req.query.token_type;
@@ -158,7 +158,8 @@ var oauthURL = constructURL("http://discord.com/", {
   protocol: "https",
 });
 
-apps.listen(config.port, () => {
+
+app.listen(config.port, () => {
   console.log("Server started.");
   console.log(`The URL is: ${oauthURL}`);
 })
