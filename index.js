@@ -42,6 +42,8 @@ var applicant = mongoose.model("applicant", applicantScheme);
 
 app.get('/api/callback', async function (req, res) {
 
+   if (!config.open) return res.send("Sorry! The application is closed.");
+   
   var Discord = require('discord.js');
   var client = new Discord.Client();
 
