@@ -7,5 +7,7 @@
 "allowedRoles": [],
 "blockedRoles": [],
 "open": true,
-"formLink": ""
+"formLink": "",
+"rootURL": "",
+"port": ""
 }
