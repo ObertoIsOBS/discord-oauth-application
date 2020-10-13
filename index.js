@@ -144,7 +144,21 @@ apps.get('/api/application', async function (req, res) {
   res.sendFile(path.join(__dirname + '/apply.html'));
 });
 
+const constructURL = require("construct-url");
+ 
+var oauthURL = constructURL("http://discord.com/", {
+  queryParams: {
+     client_id: config.client_id,
+     redirect_uri: `${config.rootURL}${config.port === 80 ? '' : ':' + config.port}/api/callback`,
+     response_type: "code",
+     scope: "identify"
+  },
+  path: "/api/oauth2/authorize",
+  lowercase: true,
+  protocol: "https",
+});
 
 apps.listen(config.port, () => {
   console.log("Server started.");
+  console.log(`The URL is: ${oauthURL}`);
 })
