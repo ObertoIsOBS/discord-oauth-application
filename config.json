@@ -3,6 +3,7 @@
 "client_secret": "",
 "client_token": "",
 "guild": "",
+"title": "",
 "requiredRoles": [],
 "allowedRoles": [],
 "blockedRoles": [],
