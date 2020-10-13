@@ -46,3 +46,12 @@ If you would like to require users to enter their discord ID the program shows t
 
 ## Publishing
 Once you are done, make sure "open" in [config.json](https://github.com/ObertoIsOBS/discord-oauth-application/blob/main/config.json) is set to `true`. To get the application link check the console when you start the program. You will see it there, this link will not change so long as the client information stays the same. I recommend using [redir.wtf](https://redir.wtf) to create a custo URL which will lead to your application.
+Please read the information on starting the program.
+### Locally
+Open `update.bat` first to download the dependencies. Once finished run `run.bat`.
+### On a server
+- Install dependencies:
+  - `npm i express path mongoose uniqid node-fetch form-data construct-url`
+  - `npm i -g nodemon`
+- Run the program
+`nodemon index.js` *You can also use managers like pm2 of course.*
